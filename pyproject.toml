@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipeline_factory"
+
+authors = [
+    {name = "Hristo Gueorguiev", email = "hristo.gueorguiev@gmail.com"},
+]
+
+description = "Python server framework to define, manage, schedule and execute custom defined code pipelines and series of pipeline across multiple worker processes"
+
+readme = "README.rst"
+
+requires-python = ">=3.10"
+
+keywords = ["task", "pipeline", "schedule", "workers", "async", "pipeline framework"]
+
+license = {text = "MIT License"}
+
+classifiers = [
+    "Framework :: FastAPI",
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = [
+    "fastapi",
+    "sqlmodel",
+    "croniter",
+]
+
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+  "pyright",
+  "ruff"
+]
+
+[tool.setuptools.package-data]
+"pipeline_factory.server.templates" = ["*.*"]
+
+[project.scripts]
+plfcli = "pipeline_factory.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pipeline_factory"]
+
+[tool.setuptools_scm]
+version_file = "src/pipeline_factory/_version.py"
