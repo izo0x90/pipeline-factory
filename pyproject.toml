@@ -35,7 +35,9 @@ dynamic = ["version"]
 [project.optional-dependencies]
 dev = [
   "pyright",
-  "ruff"
+  "ruff",
+  "build",
+  "twine"
 ]
 
 [tool.setuptools.package-data]
