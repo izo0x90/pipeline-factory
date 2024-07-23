@@ -339,7 +339,7 @@ class SqliteControler:
 
         results = sync_exec_and_commit_wait_on_session(select_generation)
         if not results:
-            raise RuntimeError(f"Matching Generation not found")
+            raise RuntimeError("Matching Generation not found")
 
         generation, *_ = results
 
