@@ -42,7 +42,7 @@ def _setup_pipeline(
     # TODO: Pipeline init func call
     #   - add a way to register pipeline coerce func that converts initial context
     #   - add a way to register pipeline init func
-    #   - call coerce and init funcs prior to executing pipeline 
+    #   - call coerce and init funcs prior to executing pipeline
 
     return context, pipeline_steps
 

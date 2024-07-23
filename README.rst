@@ -49,5 +49,5 @@ Installation
 
 Example usage
 =============
-`Example app <example_app>`_
+`Example app <https://github.com/izo0x90/pipeline-factory/tree/main/example_app>`_
 

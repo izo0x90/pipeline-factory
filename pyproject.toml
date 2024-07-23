@@ -19,6 +19,7 @@ keywords = ["task", "pipeline", "schedule", "workers", "async", "pipeline framew
 
 license = {text = "MIT License"}
 
+
 classifiers = [
     "Framework :: FastAPI",
     "Programming Language :: Python :: 3",
@@ -31,6 +32,10 @@ dependencies = [
 ]
 
 dynamic = ["version"]
+
+[project.urls]
+Repository = "https://github.com/izo0x90/pipeline-factory"
+Issues = "https://github.com/izo0x90/pipeline-factory/issues"
 
 [project.optional-dependencies]
 dev = [
